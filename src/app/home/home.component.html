@@ -1,10 +1,30 @@
-<section class="h-intro-section bg-primary-orange">
+<section class="h-intro-section bg-primary-orange relative z-0">
   <div
     class="absolute left-2/4 top-2/4 z-10 w-full -translate-x-1/2 -translate-y-1/2 text-center"
   >
     <div class="text-primary-white">
-      <p class="font-Gloock pb-4 text-8xl">Bienvenue</p>
-      <p class="font-Inter text-2xl">Thérapie holistique - Eveil spirituel</p>
+      <img
+        ngSrc="../../assets/imgs/logo.webp"
+        alt="logo"
+        height="442"
+        width="442"
+        priority
+        class="absolute -top-96 left-0 right-0 m-auto h-96 w-96"
+        routerLink="/acceuil"
+      />
+      <p class="font-Gloock pb-4 text-6xl md:text-7xl lg:text-8xl">Bienvenue</p>
+      <div class="font-Inter flex items-center justify-center text-2xl">
+        <span>Psycho-spiritualité&nbsp;&nbsp;</span>
+        <fa-icon class="text-xs" icon="circle"></fa-icon>
+        <span>&nbsp;&nbsp;Soin énergétique&nbsp;&nbsp;</span>
+        <fa-icon class="text-xs" icon="circle"></fa-icon>
+        <span>&nbsp;&nbsp;Accompagnement spirituel&nbsp;&nbsp;</span>
+        <fa-icon class="text-xs" icon="circle"></fa-icon>
+        <span
+          >&nbsp;&nbsp;Communauté d'éveil collectif et
+          solidaire&nbsp;&nbsp;</span
+        >
+      </div>
       <div
         class="absolute -bottom-40 left-0 right-0 m-auto flex justify-center"
       >
