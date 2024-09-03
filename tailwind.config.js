@@ -12,9 +12,13 @@ module.exports = {
           white: "#E7E9DB",
         },
       },
+      height: {
+        "intro-section": "calc(100vh - 128px)",
+      },
     },
     fontFamily: {
       Inter: ["'Inter', sans-serif"],
+      Gloock: ["'Gloock', serif"],
     },
     container: {
       center: true,
