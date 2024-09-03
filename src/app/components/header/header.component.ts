@@ -8,4 +8,8 @@ import { SharedModule } from '../../shared/shared.module';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  goTo(url: string): void {
+    window.open(url, '_blank');
+  }
+}

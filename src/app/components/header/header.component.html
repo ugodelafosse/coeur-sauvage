@@ -7,6 +7,7 @@
       width="442"
       priority
       class="h-32 w-32 cursor-pointer"
+      routerLink="/acceuil"
     />
     <div
       class="font-Inter absolute left-0 right-0 m-auto flex w-96 content-center justify-between text-xl"
@@ -20,6 +21,7 @@
     <fa-icon
       class="cursor-pointer text-3xl"
       [icon]="['fab', 'instagram']"
+      (click)="goTo('https://www.instagram.com/cs.coeur.sauvage')"
     ></fa-icon>
   </div>
 </header>
