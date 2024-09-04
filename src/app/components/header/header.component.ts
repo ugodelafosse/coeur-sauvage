@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
 
 @Component({
@@ -9,6 +9,13 @@ import { SharedModule } from '../../shared/shared.module';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  isScrolled: boolean = false;
+
+  @HostListener('window:scroll')
+  scrollEvent() {
+    window.scrollY >= 20 ? (this.isScrolled = true) : (this.isScrolled = false);
+  }
+
   goTo(url: string): void {
     window.open(url, '_blank');
   }
