@@ -1,5 +1,5 @@
 <section
-  class="relative z-0 flex h-intro-section w-full flex-col items-center justify-center bg-primary-orange text-primary-white"
+  class="relative z-0 flex h-intro-section w-full flex-col items-center justify-center bg-primary-orange text-white"
 >
   <img
     ngSrc="../../assets/imgs/logo.webp"
@@ -10,8 +10,8 @@
     class="h-60 w-60 md:h-72 md:w-72 lg:h-96 lg:w-96"
     routerLink="/acceuil"
   />
-  <p class="pb-4 font-Gloock text-6xl md:text-7xl lg:text-8xl">Bienvenue</p>
-  <div class="mb-10 text-center font-Inter text-lg lg:text-2xl">
+  <p class="mb-4 font-Gloock text-6xl md:text-7xl lg:text-8xl">Bienvenue</p>
+  <div class="mb-10 text-center font-Inter text-lg font-bold lg:text-2xl">
     <span>Psycho-spiritualité&nbsp;&nbsp;</span>
     <fa-icon class="text-xs" icon="circle"></fa-icon>
     <span>&nbsp;&nbsp;Soin énergétique&nbsp;&nbsp;</span>
@@ -23,10 +23,17 @@
     >
   </div>
   <p
-    class="rounded-md border-4 border-primary-white p-5 font-Inter text-2xl lg:text-4xl"
+    class="rounded-md border-4 border-primary-white p-5 font-Gloock text-2xl font-medium tracking-wider lg:text-4xl"
   >
     “Nous sommes un grand Cœur Sauvage”
   </p>
+  <img
+    class="container -z-10 object-cover opacity-70"
+    ngSrc="../../assets/imgs/landing-image.png"
+    alt="landing-image"
+    priority
+    fill
+  />
 </section>
 <section class="flex flex-col justify-center bg-primary-white">
   <span class="mb-8 font-Gloock text-4xl"
