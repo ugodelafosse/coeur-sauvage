@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       height: {
-        "intro-section": "calc(100vh - 128px)",
+        "intro-section": "calc(100vh - 112px)",
       },
     },
     fontFamily: {
