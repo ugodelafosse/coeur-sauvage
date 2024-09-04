@@ -9,11 +9,12 @@ module.exports = {
           orange: "#E17D35",
           "pink-dark": "#C97B6E",
           beige: "#EEC375",
+          "beige-transparent": "rgba(238, 195, 117, 0.5)",
           white: "#E7E9DB",
         },
       },
       height: {
-        "intro-section": "calc(100vh - 96px)",
+        "intro-section": "100vh",
       },
     },
     fontFamily: {
@@ -23,8 +24,8 @@ module.exports = {
     container: {
       center: true,
       screens: {
-        lg: "1536px",
-        xl: "1536px",
+        lg: "2500px",
+        xl: "2500px",
         "2xl": "2500px",
       },
     },
