@@ -9,17 +9,16 @@ module.exports = {
           orange: "#E17D35",
           "pink-dark": "#C97B6E",
           beige: "#EEC375",
-          "beige-transparent": "rgba(238, 195, 117, 0.5)",
+          "beige-transparent": "rgba(238, 195, 117, 0.8)",
           white: "#E7E9DB",
         },
-      },
-      height: {
-        "intro-section": "100vh",
       },
     },
     fontFamily: {
       Inter: ["'Inter', sans-serif"],
       Gloock: ["'Gloock', serif"],
+      Josefin: ["'Josefin Sans', sans-serif"],
+      Merriweather: ["'Merriweather', serif"],
     },
     container: {
       center: true,

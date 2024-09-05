@@ -10,10 +10,13 @@ import { SharedModule } from '../../shared/shared.module';
 })
 export class HeaderComponent {
   isScrolled: boolean = false;
+  lastScrollTop: number = 0;
 
   @HostListener('window:scroll')
   scrollEvent() {
-    window.scrollY >= 20 ? (this.isScrolled = true) : (this.isScrolled = false);
+    const st = window.scrollY || document.documentElement.scrollTop;
+    this.isScrolled = st > this.lastScrollTop;
+    this.lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   }
 
   goTo(url: string): void {
