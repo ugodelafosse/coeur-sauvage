@@ -13,6 +13,15 @@ module.exports = {
           white: "#E7E9DB",
         },
       },
+      borderRadius: {
+        large: "192px",
+      },
+      minHeight: {
+        "profile-image": "695px",
+      },
+      maxHeight: {
+        "profile-text": "680px",
+      },
     },
     fontFamily: {
       Inter: ["'Inter', sans-serif"],
