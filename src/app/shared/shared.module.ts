@@ -5,7 +5,11 @@ import {
   FontAwesomeModule,
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCircle,
+  faQuoteLeft,
+  faQuoteRight,
+} from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
@@ -15,6 +19,6 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 })
 export class SharedModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faInstagram, faCircle);
+    library.addIcons(faInstagram, faCircle, faQuoteLeft, faQuoteRight);
   }
 }
