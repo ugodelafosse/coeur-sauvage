@@ -12,6 +12,7 @@ import {
   faSeedling,
   faFaceGrinTears,
   faSpa,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -30,6 +31,7 @@ export class SharedModule {
       faSeedling,
       faFaceGrinTears,
       faSpa,
+      faBars,
     );
   }
 }

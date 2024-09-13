@@ -1,8 +1,8 @@
-<header class="fixed z-20 h-24 w-full rounded-lg text-white">
+<header class="fixed z-40 h-24 w-full rounded-lg text-white">
   <div
     [ngClass]="{
       'pointer-events-none !h-0 opacity-0': isScrolled,
-      'bg-primary-beige-transparent': lastScrollTop != 0,
+      'bg-primary-beige-transparent': lastScrollTop != 0 && !isNavOpen,
     }"
     class="container flex h-full items-center justify-between rounded-b-xl pl-5 pr-16 transition-all duration-500 ease-in-out"
   >
@@ -20,10 +20,10 @@
     >
       <ul class="list-reset flex flex-1 justify-between">
         <li>
-          <a href="#">Acceuil</a>
+          <a href="/acceuil">Acceuil</a>
         </li>
         <li>
-          <a href="#">Prestations</a>
+          <a href="/prestations">Prestations</a>
         </li>
         <li>
           <a href="#">Contact</a>
@@ -31,9 +31,50 @@
       </ul>
     </div>
     <fa-icon
-      class="cursor-pointer text-3xl"
+      class="hidden cursor-pointer text-3xl lg:block"
       [icon]="['fab', 'instagram']"
       (click)="goTo('https://www.instagram.com/cs.coeur.sauvage')"
     ></fa-icon>
+    <div
+      (click)="toggleNav()"
+      class="hamburger cursor-pointer lg:hidden"
+      id="hamburger"
+    >
+      <div
+        class="rounded-xl bg-white"
+        [ngClass]="{
+          '!bg-primary-orange-dark': isNavOpen,
+        }"
+      ></div>
+      <div
+        class="rounded-xl bg-white"
+        [ngClass]="{
+          '!bg-primary-orange-dark': isNavOpen,
+        }"
+      ></div>
+      <div
+        class="rounded-xl bg-white"
+        [ngClass]="{
+          '!bg-primary-orange-dark': isNavOpen,
+        }"
+      ></div>
+    </div>
   </div>
 </header>
+<div
+  class="fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-center justify-center gap-10 bg-primary-white font-Merriweather text-4xl font-bold text-primary-orange-dark"
+  [ngClass]="{
+    hidden: !isNavOpen,
+  }"
+>
+  <a href="/acceuil" class="cursor-pointer" (click)="toggleNav()">Acceuil</a>
+  <a href="/prestations" class="cursor-pointer" (click)="toggleNav()"
+    >Prestations</a
+  >
+  <a href="#" class="cursor-pointer" (click)="toggleNav()">Contact</a>
+  <fa-icon
+    class="absolute bottom-28 cursor-pointer text-3xl"
+    [icon]="['fab', 'instagram']"
+    (click)="goTo('https://www.instagram.com/cs.coeur.sauvage')"
+  ></fa-icon>
+</div>

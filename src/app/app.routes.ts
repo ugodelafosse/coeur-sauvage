@@ -11,6 +11,13 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./home/home.component').then((m) => m.HomeComponent),
   },
+  {
+    path: 'prestations',
+    loadComponent: () =>
+      import('./prestations/prestations.component').then(
+        (m) => m.PrestationsComponent,
+      ),
+  },
   // {
   //   path: '404',
   //   loadChildren: () =>
