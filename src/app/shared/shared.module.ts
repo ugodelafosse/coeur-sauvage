@@ -9,6 +9,9 @@ import {
   faCircle,
   faQuoteLeft,
   faQuoteRight,
+  faSeedling,
+  faFaceGrinTears,
+  faSpa,
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,6 +22,14 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 })
 export class SharedModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faInstagram, faCircle, faQuoteLeft, faQuoteRight);
+    library.addIcons(
+      faInstagram,
+      faCircle,
+      faQuoteLeft,
+      faQuoteRight,
+      faSeedling,
+      faFaceGrinTears,
+      faSpa,
+    );
   }
 }
