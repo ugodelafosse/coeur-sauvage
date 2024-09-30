@@ -13,6 +13,7 @@ import {
   faFaceGrinTears,
   faSpa,
   faBars,
+  faPlus,
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -32,6 +33,7 @@ export class SharedModule {
       faFaceGrinTears,
       faSpa,
       faBars,
+      faPlus,
     );
   }
 }

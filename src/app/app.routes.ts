@@ -18,6 +18,11 @@ export const routes: Routes = [
         (m) => m.PrestationsComponent,
       ),
   },
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./contact/contact.component').then((m) => m.ContactComponent),
+  },
   // {
   //   path: '404',
   //   loadChildren: () =>

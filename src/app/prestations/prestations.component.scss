@@ -1,0 +1,30 @@
+.cards-container {
+  @apply relative z-20 flex w-full flex-col items-center justify-center gap-5 font-Inter xl:flex-row;
+}
+.presta-cards {
+  @apply relative flex w-11/12 flex-col items-center rounded-xl bg-primary-beige-transparent pt-10 xl:w-1/4;
+  .card-text {
+    @apply px-5;
+    .card-title {
+      @apply z-10 block pb-5 text-2xl font-bold;
+    }
+    .card-paragraph {
+      @apply min-h-28 text-lg;
+    }
+    .details-button-container {
+      @apply py-5;
+    }
+    .details-button {
+      @apply flex w-28 cursor-pointer justify-center rounded-3xl bg-primary-orange p-1 transition-all hover:opacity-80;
+      .details-button-text {
+        @apply font-bold;
+      }
+      .details-button-icon {
+        @apply pl-1 text-lg;
+      }
+    }
+  }
+  .card-image {
+    @apply h-80 rounded-b-xl object-cover opacity-80;
+  }
+}

@@ -26,7 +26,7 @@
           <a href="/prestations">Prestations</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -62,7 +62,7 @@
   </div>
 </header>
 <div
-  class="fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-center justify-center gap-10 bg-primary-white font-Merriweather text-4xl font-bold text-primary-orange-dark"
+  class="fixed bottom-0 left-0 right-0 top-0 z-30 flex flex-col items-center justify-center gap-10 bg-primary-white font-Merriweather text-4xl font-bold text-primary-orange-dark"
   [ngClass]="{
     hidden: !isNavOpen,
   }"
@@ -71,7 +71,7 @@
   <a href="/prestations" class="cursor-pointer" (click)="toggleNav()"
     >Prestations</a
   >
-  <a href="#" class="cursor-pointer" (click)="toggleNav()">Contact</a>
+  <a href="/contact" class="cursor-pointer" (click)="toggleNav()">Contact</a>
   <fa-icon
     class="absolute bottom-28 cursor-pointer text-3xl"
     [icon]="['fab', 'instagram']"
