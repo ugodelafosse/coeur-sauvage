@@ -31,3 +31,22 @@
     @apply h-80 rounded-b-xl object-cover opacity-80 transition-all duration-1000;
   }
 }
+
+.pulse {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(238, 195, 117, 0.8);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
