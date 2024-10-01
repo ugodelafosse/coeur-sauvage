@@ -16,11 +16,15 @@ module.exports = {
       borderRadius: {
         large: "192px",
       },
+      maxWidth: {
+        "card-width": "64rem",
+      },
       minHeight: {
         "profile-image": "695px",
       },
       maxHeight: {
         "profile-text": "680px",
+        "card-details-height": "900px",
       },
     },
     fontFamily: {

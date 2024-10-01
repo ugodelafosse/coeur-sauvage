@@ -14,6 +14,7 @@ import {
   faSpa,
   faBars,
   faPlus,
+  faMinus,
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -34,6 +35,7 @@ export class SharedModule {
       faSpa,
       faBars,
       faPlus,
+      faMinus,
     );
   }
 }
