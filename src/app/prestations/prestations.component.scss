@@ -2,7 +2,7 @@
   @apply relative z-20 flex w-full flex-col items-center justify-center gap-5 font-Inter xl:flex-row;
 }
 .presta-cards {
-  @apply relative flex w-11/12 max-w-card-width flex-col items-center overflow-hidden rounded-xl border-2 border-primary-beige-transparent bg-primary-beige-transparent pt-10 xl:w-1/4 xl:min-w-96;
+  @apply relative flex w-11/12 max-w-card-width flex-col items-center overflow-hidden rounded-xl border-2 border-primary-beige-transparent bg-primary-beige-transparent pt-10 shadow-lg xl:w-1/4 xl:min-w-96;
   .card-text {
     @apply px-5;
     .card-title {
@@ -28,7 +28,7 @@
     }
   }
   .card-image {
-    @apply h-80 rounded-b-xl object-cover opacity-80 transition-all duration-1000;
+    @apply h-80 rounded-b-xl object-cover transition-all duration-1000;
   }
 }
 

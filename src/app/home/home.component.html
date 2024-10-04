@@ -59,13 +59,13 @@
 </section>
 <section class="relative flex min-h-screen justify-center bg-primary-pink-dark">
   <div
-    class="container relative flex h-full flex-col items-center justify-center pb-10 md:absolute md:flex-row-reverse md:px-10 md:pb-0"
+    class="container relative z-10 flex h-full flex-col items-center justify-center pb-10 md:absolute md:flex-row-reverse md:px-10 md:pb-0"
   >
     <div
-      class="w-full rounded-none p-10 text-primary-white md:max-h-profile-text md:w-1/2 md:rounded-r-xl md:bg-primary-white md:text-primary-pink-dark 2xl:w-1/3"
+      class="w-full rounded-none border-0 border-primary-beige-transparent p-10 text-white md:w-1/2 md:rounded-xl md:border-b-4 md:border-r-4 md:border-t-4 md:bg-primary-white md:text-primary-pink-dark md:shadow-lg 2xl:w-1/3"
     >
       <span
-        class="mb-5 inline-block font-Merriweather text-3xl font-bold md:text-xl lg:mb-10 lg:text-4xl"
+        class="z-20 mb-10 block rounded-md border-4 border-white p-3 text-center font-Merriweather text-2xl font-bold tracking-wider md:border-primary-pink-dark md:p-5 lg:text-4xl"
         >Qui suis-je ?</span
       >
       <p class="font-Inter text-lg md:text-sm lg:text-lg">
@@ -92,7 +92,7 @@
       </p>
     </div>
     <div
-      class="relative z-0 h-96 w-full md:h-2/3 md:min-h-profile-image md:w-1/2 md:pb-0 2xl:w-1/3"
+      class="relative z-0 h-96 w-full md:h-2/3 md:min-h-profile-image md:w-1/2 md:pb-0 md:shadow-lg 2xl:w-1/3"
     >
       <img
         class="absolute rounded-large object-cover px-5 md:rounded-xl md:px-0"
@@ -102,16 +102,23 @@
       />
     </div>
   </div>
+  <img
+    class="z-0 object-cover opacity-70"
+    ngSrc="../../assets/imgs/profile-bg.png"
+    alt="landing-image"
+    priority
+    fill
+  />
 </section>
 <section class="relative bg-primary-white text-primary-orange-dark">
   <div
     class="container flex min-h-80 flex-col items-center justify-center py-20 md:flex-row"
   >
     <fa-icon
-      class="pl-16 pr-16 text-3xl lg:pl-48 lg:text-4xl"
+      class="z-10 pl-16 pr-16 text-3xl lg:pl-48 lg:text-4xl"
       icon="quote-left"
     ></fa-icon>
-    <p class="px-8 text-center text-xl font-semibold md:px-0 lg:text-3xl">
+    <p class="z-10 px-8 text-center text-xl font-semibold md:px-0 lg:text-3xl">
       Un cœur sauvage, c'est un cœur libre et indomptable, qui bat au rythme de
       ses véritables désirs. C'est une âme qui refuse de se conformer, qui
       explore, s'émerveille et vit avec passion, toujours en quête
@@ -127,61 +134,64 @@
   </div>
 </section>
 <section
-  class="relative h-auto min-h-screen bg-primary-beige text-white lg:h-screen"
+  class="relative flex min-h-screen bg-primary-beige text-white"
+  xmlns="http://www.w3.org/1999/html"
 >
-  <div class="container flex h-full flex-col items-center justify-center py-10">
-    <span class="mb-10 block text-center font-Merriweather text-4xl font-bold"
+  <div
+    class="container flex grow flex-col items-center justify-center gap-5 pt-16"
+  >
+    <span
+      class="z-20 mb-3 block rounded-md border-4 border-white p-3 text-center font-Merriweather text-2xl font-bold tracking-wider text-white md:p-5 lg:text-4xl"
       >Le projet Coeur Sauvage</span
     >
-    <div
-      class="flex h-1/2 w-full flex-col items-center justify-center gap-10 font-Inter xl:flex-row"
-    >
-      <div
-        class="relative flex h-full w-1/4 min-w-96 flex-col items-center rounded-xl bg-primary-orange px-5 pb-28 pt-20 text-center"
-      >
-        <fa-icon class="z-10 mb-10 text-6xl" icon="seedling"></fa-icon>
-        <span class="z-10 mb-10 text-2xl font-bold"
-          >Une transformation enrichissante</span
-        >
-        <p class="z-10 text-lg">
-          Reconnecte toi à ta joie d’enfant, à tes passions, et à ce qui te
-          motive profondément.
-        </p>
-        <div class="absolute z-0 h-80 w-80 opacity-50">
+    <div class="cards-container">
+      <div class="presta-cards">
+        <div class="card-text">
+          <fa-icon class="card-icon" icon="spa"></fa-icon>
+          <span class="card-title">Une transformation enrichissante</span>
+          <p class="card-paragraph">
+            Reconnecte toi à ta joie d’enfant, à tes passions, et à ce qui te
+            motive profondément.
+          </p>
+        </div>
+        <div class="card-image">
           <img ngSrc="../../assets/imgs/logo.png" alt="logo" priority fill />
         </div>
       </div>
-      <div
-        class="relative flex h-full w-1/4 min-w-96 flex-col items-center rounded-xl bg-primary-orange px-5 pb-28 pt-20 text-center"
-      >
-        <fa-icon class="z-10 mb-10 text-6xl" icon="face-grin-tears"></fa-icon>
-        <span class="z-10 mb-10 text-2xl font-bold"
-          >Un épanouissement accéléré</span
-        >
-        <p class="z-10 text-lg">
-          Je t’accompagne pour passer du mode survie à un épanouissement rapide,
-          où tu te sens pleinement satisfait(e).
-        </p>
-        <div class="absolute z-0 h-80 w-80 opacity-50">
+      <div class="presta-cards">
+        <div class="card-text">
+          <fa-icon class="card-icon" icon="face-grin-tears"></fa-icon>
+          <span class="card-title">Guidance simple</span>
+          <p class="card-paragraph">
+            Je t’accompagne pour passer du mode survie à un épanouissement
+            rapide, où tu te sens pleinement satisfait(e).
+          </p>
+        </div>
+        <div class="card-image">
           <img ngSrc="../../assets/imgs/logo.png" alt="logo" priority fill />
         </div>
       </div>
-      <div
-        class="relative flex h-full w-1/4 min-w-96 flex-col items-center rounded-xl bg-primary-orange px-5 pb-28 pt-20 text-center"
-      >
-        <fa-icon class="z-10 mb-10 text-6xl" icon="spa"></fa-icon>
-        <span class="z-10 mb-10 text-2xl font-bold"
-          >Une harmonie au quotidien</span
-        >
-        <p class="z-10 text-lg">
-          Apprends à naviguer à travers les défis de la vie et découvre ta
-          véritable nature. Chaque jour peut devenir plus enrichissant, même les
-          plus difficiles, en équilibrant et harmonisant ton être.
-        </p>
-        <div class="absolute z-0 h-80 w-80 opacity-50">
+      <div class="presta-cards">
+        <div class="card-text">
+          <fa-icon class="card-icon" icon="spa"></fa-icon>
+          <span class="card-title">Soin énergétique personnalisé</span>
+          <p class="card-paragraph">
+            Apprends à naviguer à travers les défis de la vie et découvre ta
+            véritable nature. Chaque jour peut devenir plus enrichissant, même
+            les plus difficiles, en équilibrant et harmonisant ton être.
+          </p>
+        </div>
+        <div class="card-image">
           <img ngSrc="../../assets/imgs/logo.png" alt="logo" priority fill />
         </div>
       </div>
     </div>
   </div>
+  <img
+    class="z-0 object-cover opacity-70"
+    ngSrc="../../assets/imgs/other-bg.png"
+    alt="landing-image"
+    priority
+    fill
+  />
 </section>

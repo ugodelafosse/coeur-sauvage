@@ -1,0 +1,36 @@
+.cards-container {
+  @apply relative z-20 flex w-full flex-col items-center justify-center gap-5 font-Inter xl:flex-row;
+}
+.presta-cards {
+  @apply relative flex min-h-96 w-11/12 max-w-card-width flex-col overflow-hidden rounded-xl border-4 border-primary-beige-transparent bg-primary-orange pt-10 shadow-lg xl:w-1/4 xl:min-w-96;
+  .card-text {
+    @apply z-20 px-5 text-center;
+    .card-icon {
+      @apply block min-h-20 text-6xl;
+    }
+    .card-title {
+      @apply z-10 block min-h-20 pb-5 text-2xl font-bold;
+    }
+    .card-paragraph {
+      @apply min-h-28 font-Inter text-lg;
+    }
+    .details-button-container {
+      @apply py-5;
+    }
+    .details-button {
+      @apply flex w-28 cursor-pointer justify-center rounded-3xl bg-primary-orange p-1 transition-all hover:opacity-80;
+      .details-button-text {
+        @apply font-bold;
+      }
+      .details-button-icon {
+        @apply pl-1 text-lg;
+      }
+    }
+    .card-details-paragraph {
+      @apply max-h-0 overflow-hidden text-base transition-all duration-1000;
+    }
+  }
+  .card-image {
+    @apply absolute left-0 right-0 z-0 m-auto h-80 w-80 opacity-50;
+  }
+}
