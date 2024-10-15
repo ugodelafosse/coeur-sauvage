@@ -14,21 +14,6 @@
     .card-paragraph {
       @apply min-h-28 font-Inter text-lg;
     }
-    .details-button-container {
-      @apply py-5;
-    }
-    .details-button {
-      @apply flex w-28 cursor-pointer justify-center rounded-3xl bg-primary-orange p-1 transition-all hover:opacity-80;
-      .details-button-text {
-        @apply font-bold;
-      }
-      .details-button-icon {
-        @apply pl-1 text-lg;
-      }
-    }
-    .card-details-paragraph {
-      @apply max-h-0 overflow-hidden text-base transition-all duration-1000;
-    }
   }
   .card-image {
     @apply absolute left-0 right-0 z-0 m-auto h-80 w-80 opacity-50;

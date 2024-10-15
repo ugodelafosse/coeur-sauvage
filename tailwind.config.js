@@ -11,7 +11,11 @@ module.exports = {
           beige: "#EEC375",
           "beige-transparent": "rgba(238, 195, 117, 0.8)",
           white: "#E7E9DB",
+          "leaf-green": "#436436",
         },
+      },
+      screens: {
+        "3xl": "3000px",
       },
       borderRadius: {
         large: "192px",

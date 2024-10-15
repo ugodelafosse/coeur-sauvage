@@ -1,0 +1,19 @@
+<div class="swiper-container !w-full">
+  <div class="swiper-wrapper">
+    <div
+      *ngFor="let review of reviews"
+      class="swiper-slide !flex items-center justify-center"
+    >
+      <div class="presta-cards">
+        <div class="card-text">
+          <p class="card-paragraph" [innerHTML]="review.text"></p>
+          <span class="card-title">{{ review.name }}</span>
+        </div>
+        <div class="card-image">
+          <img ngSrc="../../../assets/imgs/logo.png" alt="logo" priority fill />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>

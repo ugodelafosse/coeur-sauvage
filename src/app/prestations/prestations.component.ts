@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { ReviewSliderComponent } from '../components/review-slider/review-slider.component';
 
 @Component({
   selector: 'app-prestations',
   standalone: true,
-  imports: [SharedModule],
+  imports: [SharedModule, ReviewSliderComponent],
   templateUrl: './prestations.component.html',
   styleUrl: './prestations.component.scss',
 })
