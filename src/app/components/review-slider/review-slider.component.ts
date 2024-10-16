@@ -83,7 +83,7 @@ export class ReviewSliderComponent implements AfterViewInit {
     //   text: '« Et bonjour ! 😊 Par rapport à la séance tout était parfait, tu m’as tout bien expliqué par rapport au déroulement et aux étapes que nous allions faire ensemble. Tu m’as dit tout ce qu’il y avait à savoir sur notre existence sur terre et comment l’énergie circulait en nous, suivant les différents formes d’énergie que nous avons autour de notre enveloppe charnelle. On a travaillé sur des points qui me concernaient vraiment, ce qui m’a aussi donné envie d’avancer et de travailler là dessus même de mon côté pour ne pas me laisser envahir par certaines mauvaises pensées ou énergies qui pourraient me traverser. Je me suis senti détendu du début à la fin et encore plus léger quand je suis parti 😊. Merci encore pour cette séance. Gros bisous à toi 😘»',
     // },
     {
-      name: 'Amandine Lefebre',
+      name: 'Amandine, Toulouse',
       text: '« Le soin énergétique de Camille m’a fait beaucoup de bien. Il m’a aidé à retrouver un équilibre au moment où j’en avais besoin »',
     },
     {
