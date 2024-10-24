@@ -76,7 +76,7 @@ export class ReviewSliderComponent implements AfterViewInit {
     },
     {
       name: 'Anna, Rodez',
-      text: "« Camille m'a fait un soin énergétique qui m'a beaucoup apaisé. Elle est très à l'écoute, douce, et prend le temps de faire un bilan complet. Je me suis tout de suite sentie en confiance ! Je me suis sentie beaucoup mieux après et je commence déjà à sentir les bénéfices sur le long terme !! Je recommande++ »",
+      text: "« Camille est très a l'écoute, douce et investie pour trouver des solutions. Elle m'a fait un soin énergétique, après lequel je me suis sentie beaucoup plus apaisée et moins stressée comme sur un nuage. »",
     },
     // {
     //   name: 'Clément, Toulouse',
