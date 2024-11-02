@@ -2,7 +2,10 @@ import {
   Component,
   AfterViewInit,
   CUSTOM_ELEMENTS_SCHEMA,
+  Inject,
+  PLATFORM_ID,
 } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { SharedModule } from '../../shared/shared.module';
 import Swiper from 'swiper';
 
@@ -92,15 +95,19 @@ export class ReviewSliderComponent implements AfterViewInit {
     },
   ];
 
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+
   ngAfterViewInit() {
-    this.swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 50,
-      grabCursor: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      this.swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
   }
 }
