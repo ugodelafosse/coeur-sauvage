@@ -20,13 +20,13 @@
     >
       <ul class="list-reset flex flex-1 justify-between">
         <li>
-          <a href="/accueil">Accueil</a>
+          <a routerLink="/accueil">Accueil</a>
         </li>
         <li>
-          <a href="/prestations">Prestations</a>
+          <a routerLink="/prestations">Prestations</a>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a routerLink="/contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -67,11 +67,15 @@
     hidden: !isNavOpen,
   }"
 >
-  <a href="/accueil" class="cursor-pointer" (click)="toggleNav()">Acceuil</a>
-  <a href="/prestations" class="cursor-pointer" (click)="toggleNav()"
+  <a routerLink="/accueil" class="cursor-pointer" (click)="toggleNav()"
+    >Acceuil</a
+  >
+  <a routerLink="/prestations" class="cursor-pointer" (click)="toggleNav()"
     >Prestations</a
   >
-  <a href="/contact" class="cursor-pointer" (click)="toggleNav()">Contact</a>
+  <a routerLink="/contact" class="cursor-pointer" (click)="toggleNav()"
+    >Contact</a
+  >
   <fa-icon
     class="absolute bottom-28 cursor-pointer text-3xl"
     [icon]="['fab', 'instagram']"
