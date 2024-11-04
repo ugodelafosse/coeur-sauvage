@@ -2,12 +2,11 @@
   class="relative z-0 flex min-h-screen w-full flex-col items-center justify-center bg-primary-orange pb-10 text-white"
 >
   <img
-    ngSrc="../../assets/imgs/logo.webp"
-    alt="logo"
+    [ngSrc]="logoWithTitle"
+    alt="logo-with-title"
     height="442"
     width="442"
     class="h-60 w-60 md:h-72 md:w-72 lg:h-96 lg:w-96"
-    routerLink="/acceuil"
   />
   <p class="mb-4 font-Merriweather text-6xl md:text-7xl lg:text-8xl">
     Bienvenue
@@ -28,9 +27,8 @@
   </p>
   <img
     class="-z-10 object-cover opacity-70"
-    ngSrc="../../assets/imgs/landing-image.png"
+    [ngSrc]="landingImage"
     alt="landing-image"
-    priority
     fill
   />
 </section>
@@ -53,7 +51,7 @@
     >
   </p>
   <div class="absolute z-0 h-80 w-80 opacity-30">
-    <img ngSrc="../../assets/imgs/logo.png" alt="logo" fill />
+    <img [ngSrc]="logoWithoutTitle" alt="logo-without-title" fill />
   </div>
 </section>
 <section
@@ -97,7 +95,7 @@
     >
       <img
         class="absolute rounded-large object-cover px-5 md:rounded-xl md:px-0"
-        ngSrc="../../assets/imgs/Cam.jpg"
+        [ngSrc]="profile"
         fill
         alt="profile"
       />
@@ -105,8 +103,8 @@
   </div>
   <img
     class="z-0 object-cover opacity-70"
-    ngSrc="../../assets/imgs/profile-bg.png"
-    alt="landing-image"
+    [ngSrc]="profileBg"
+    alt="profile-bg"
     fill
   />
 </section>
@@ -129,7 +127,7 @@
       icon="quote-right"
     ></fa-icon>
     <div class="absolute z-0 h-80 w-80 opacity-30">
-      <img ngSrc="../../assets/imgs/logo.png" alt="logo" fill />
+      <img [ngSrc]="logoWithoutTitle" alt="logo-without-title" fill />
     </div>
   </div>
 </section>
@@ -155,7 +153,12 @@
           </p>
         </div>
         <div class="card-image">
-          <img ngSrc="../../assets/imgs/logo.png" alt="logo" priority fill />
+          <img
+            [ngSrc]="logoWithoutTitle"
+            alt="logo-without-title"
+            priority
+            fill
+          />
         </div>
       </div>
       <div class="presta-cards">
@@ -168,7 +171,12 @@
           </p>
         </div>
         <div class="card-image">
-          <img ngSrc="../../assets/imgs/logo.png" alt="logo" priority fill />
+          <img
+            [ngSrc]="logoWithoutTitle"
+            alt="logo-without-title"
+            priority
+            fill
+          />
         </div>
       </div>
       <div class="presta-cards">
@@ -182,15 +190,15 @@
           </p>
         </div>
         <div class="card-image">
-          <img ngSrc="../../assets/imgs/logo.png" alt="logo" fill />
+          <img [ngSrc]="logoWithoutTitle" alt="logo-without-title" fill />
         </div>
       </div>
     </div>
   </div>
   <img
     class="z-0 object-cover opacity-80"
-    ngSrc="../../assets/imgs/other-bg.png"
-    alt="landing-image"
+    [ngSrc]="projectBg"
+    alt="project-bg"
     fill
   />
 </section>

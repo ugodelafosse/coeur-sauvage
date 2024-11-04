@@ -18,6 +18,9 @@ import Swiper from 'swiper';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ReviewSliderComponent implements AfterViewInit {
+  // Images path strings
+  logoWithoutTitle = 'logo-without-title';
+
   swiper: Swiper | undefined;
 
   reviews = [

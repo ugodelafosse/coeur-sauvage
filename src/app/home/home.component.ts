@@ -10,4 +10,12 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  // Images path strings
+  logoWithTitle = 'logo-with-title';
+  logoWithoutTitle = 'logo-without-title';
+  landingImage = 'landing-image';
+  profile = 'profile';
+  profileBg = 'profile-bg';
+  projectBg = 'project-bg';
+}

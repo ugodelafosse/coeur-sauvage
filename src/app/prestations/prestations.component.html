@@ -59,7 +59,7 @@
         </div>
         <img
           [ngClass]="{ '!h-0': showDetails1 }"
-          ngSrc="../../assets/imgs/presta1.jpg"
+          [ngSrc]="presta1"
           height="1024"
           width="1024"
           alt="presta1"
@@ -115,7 +115,7 @@
         </div>
         <img
           [ngClass]="{ '!h-0': showDetails2 }"
-          ngSrc="../../assets/imgs/presta2.jpg"
+          [ngSrc]="presta2"
           height="1080"
           width="1080"
           alt="presta2"
@@ -179,7 +179,7 @@
         </div>
         <img
           [ngClass]="{ '!h-0': showDetails3 }"
-          ngSrc="../../assets/imgs/presta3.jpg"
+          [ngSrc]="presta3"
           height="1080"
           width="1080"
           alt="presta3"
@@ -200,7 +200,7 @@
           </p>
         </div>
         <img
-          ngSrc="../../assets/imgs/presta4.jpg"
+          [ngSrc]="presta4"
           height="1080"
           width="1080"
           alt="presta4"
@@ -217,9 +217,8 @@
   </div>
   <img
     class="z-10 object-cover"
-    ngSrc="../../assets/imgs/presta-bg.png"
-    alt="presta-bg"
-    priority
+    [ngSrc]="prestationBg"
+    alt="prestation-bg"
     fill
   />
 </section>
@@ -243,7 +242,7 @@
     (click)="goTo('https://www.instagram.com/cs.coeur.sauvage')"
   ></fa-icon>
   <div class="absolute z-0 h-80 w-80 opacity-30">
-    <img ngSrc="../../assets/imgs/logo.png" alt="logo" fill />
+    <img [ngSrc]="logoWithoutTitle" alt="logo-without-title" fill />
   </div>
 </section>
 <section
@@ -258,7 +257,7 @@
   ></app-review-slider>
   <img
     class="z-10 object-cover opacity-80"
-    ngSrc="../../assets/imgs/reviews-bg.png"
+    [ngSrc]="reviewsBg"
     alt="reviews-bg"
     fill
   />

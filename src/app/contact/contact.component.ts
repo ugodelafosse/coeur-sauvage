@@ -8,4 +8,7 @@ import { SharedModule } from '../shared/shared.module';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {}
+export class ContactComponent {
+  // Images path strings
+  contactBg = 'contact-bg';
+}

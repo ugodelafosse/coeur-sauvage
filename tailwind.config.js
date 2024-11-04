@@ -33,8 +33,6 @@ module.exports = {
     },
     fontFamily: {
       Inter: ["'Inter', sans-serif"],
-      Gloock: ["'Gloock', serif"],
-      Josefin: ["'Josefin Sans', sans-serif"],
       Merriweather: ["'Merriweather', serif"],
     },
     container: {

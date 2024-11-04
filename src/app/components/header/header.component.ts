@@ -10,6 +10,9 @@ import { Renderer2 } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  // Images path strings
+  logoWithTitle = 'logo-with-title';
+
   isScrolled: boolean = false;
   lastScrollTop: number = 0;
   isNavOpen = false;
