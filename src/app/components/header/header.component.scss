@@ -26,3 +26,94 @@
 .hamburger.active div:nth-child(3) {
   transform: rotate(45deg) translate(-6px, -6px);
 }
+
+// Links style and animation
+$transition-duration: 0.15s;
+$borders-thickness: 3px;
+
+.menu a {
+  position: relative;
+  display: block;
+  padding: 0.8rem;
+}
+
+.menu .border-anim {
+  position: absolute;
+  left: 0;
+  background: currentColor;
+  transition: transform $transition-duration ease-in-out;
+}
+
+.menu .border-top,
+.menu .border-bottom {
+  width: 100%;
+  height: $borders-thickness;
+  transform: scaleX(0);
+}
+
+.menu .border-left,
+.menu .border-right {
+  width: $borders-thickness;
+  height: 100%;
+  transform: scaleY(0);
+}
+
+.menu .border-top,
+.menu .border-left,
+.menu .border-right {
+  top: 0;
+}
+
+.menu .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.menu .border-top {
+  transform-origin: top left;
+}
+
+.menu .border-left {
+  transform-origin: bottom left;
+}
+
+.menu .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.menu a:hover .border-top,
+.menu a:hover .border-bottom {
+  transform: scaleX(1);
+}
+
+.menu a:hover .border-left,
+.menu a:hover .border-right {
+  transform: scaleY(1);
+}
+
+.menu a:hover .border-right {
+  transition-delay: $transition-duration;
+}
+
+.menu a:hover .border-bottom {
+  transition-delay: calc($transition-duration * 2);
+}
+
+.menu a:hover .border-left {
+  transition-delay: calc($transition-duration * 3);
+}
+
+.menu .border-left {
+  transform-origin: top left;
+}
+
+.menu .border-right,
+.menu .border-bottom {
+  transform-origin: bottom right;
+}
+
+.menu[data-animation="diagonal"] a:hover [class^="border-anim"] {
+  transition-delay: 0s;
+}
