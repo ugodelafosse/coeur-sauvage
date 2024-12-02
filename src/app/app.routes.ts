@@ -30,5 +30,5 @@ export const routes: Routes = [
   //       (m) => m.pageNotFoundRoutes
   //     ),
   // },
-  // { path: '**', redirectTo: '/404' },
+  { path: '**', redirectTo: 'accueil' },
 ];
