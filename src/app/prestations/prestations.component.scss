@@ -6,7 +6,10 @@
   .card-text {
     @apply px-5;
     .card-title {
-      @apply z-10 block min-h-20 pb-5 text-2xl font-bold;
+      @apply z-10 block min-h-8 font-Merriweather text-2xl font-bold;
+    }
+    .card-subtitle {
+      @apply z-10 block py-5 text-xl font-bold;
     }
     .card-paragraph {
       @apply min-h-28 text-lg;
@@ -15,7 +18,7 @@
       @apply py-5;
     }
     .details-button {
-      @apply flex w-28 cursor-pointer justify-center rounded-3xl bg-primary-orange p-1 transition-all hover:opacity-80;
+      @apply flex w-56 cursor-pointer justify-center rounded-3xl bg-primary-orange p-1 transition-all hover:opacity-80;
       .details-button-text {
         @apply font-bold;
       }
@@ -25,6 +28,18 @@
     }
     .card-details-paragraph {
       @apply max-h-0 overflow-hidden text-base transition-all duration-1000;
+      .card-details-list {
+        @apply list-inside list-disc;
+        li {
+          @apply pb-5;
+        }
+      }
+      .card-details-title {
+        @apply py-5 text-lg font-bold;
+      }
+      .card-details-conclusion {
+        @apply border-l-2 border-white pl-5;
+      }
     }
   }
   .card-image {

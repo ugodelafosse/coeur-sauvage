@@ -12,15 +12,17 @@
     <div class="cards-container">
       <div class="presta-cards">
         <div class="card-text">
-          <span class="card-title">Séances d’accompagnement spirituel</span>
+          <span class="card-title">Séances de guidances</span>
+          <p class="card-subtitle">Retrouve clarté et équilibre intérieur.</p>
           <p class="card-paragraph">
-            Je propose des sessions
-            <span class="font-bold">d’accompagnement spirituel</span> pour
-            t’aider à débloquer ce qui te freine au quotidien.
+            Tu traverses une situation complexe ou ressens le besoin de faire le
+            point ? Mes séances de guidances sont conçues pour t’aider à
+            éclaircir tes pensées et à recevoir des réponses alignées avec tes
+            ressentis profonds.
           </p>
           <div class="details-button-container">
             <div (click)="toggleDetails(1)" class="details-button">
-              <span class="details-button-text">Détails</span
+              <span class="details-button-text">Détails de la prestation</span
               ><fa-icon
                 *ngIf="!showDetails1"
                 class="details-button-icon"
@@ -33,29 +35,56 @@
               ></fa-icon>
             </div>
           </div>
-          <p
-            [ngClass]="{ '!max-h-card-details-height pb-5': showDetails1 }"
+          <div
+            [ngClass]="{ '!max-h-card-details-height py-5': showDetails1 }"
             class="card-details-paragraph"
           >
-            Nous allons échanger et
-            <span class="font-bold">travailler sur les énergies</span> avec des
-            <span class="font-bold">cartes</span>, le
-            <span class="font-bold">pendule</span>, et d’autres techniques
-            adaptées.<br /><br />
-            C’est l’occasion
-            <span class="font-bold"
-              >d’explorer tes blocages ou peurs inconscientes</span
-            >, découvrir tes <span class="font-bold">désirs profonds</span>, et
-            mieux comprendre ton lien au monde et aux autres, pour avancer vers
-            plus de <span class="font-bold">joie</span> et de
-            <span class="font-bold">bien-être</span>. La vie comporte des défis
-            sur lesquels tu surferas
-            <span class="font-bold">avec aisance</span>.<br /><br />
-            Mon rôle est de t’aider à
-            <span class="font-bold">libérer les énergies bloquées</span> et à
-            avancer vers le <span class="font-bold">bonheur</span> qui est déjà
-            en toi.
-          </p>
+            <ul class="card-details-list">
+              <li>
+                <span class="font-bold"
+                  >Libération et harmonisation énergétique:</span
+                >
+                Ces séances travaillent sur ton énergie, libèrent les blocages
+                et harmonisent tes émotions pour te revitaliser.
+              </li>
+              <li>
+                <span class="font-bold">Connexion spirituelle:</span> Une
+                opportunité de recevoir des messages intuitifs ou des éclairages
+                sur ta mission de vie.
+              </li>
+              <li>
+                <span class="font-bold">Évolution personnelle:</span> Libère des
+                émotions enfouies et transforme ce qui te retient pour avancer
+                avec légèreté et confiance.
+              </li>
+              <li>
+                <span class="font-bold">Séance personnalisée:</span> Dynamique
+                et sur-mesure, elle booste ta confiance en toi dans un cadre
+                bienveillant.
+              </li>
+            </ul>
+            <p class="card-details-title">Formats proposés:</p>
+            <ul class="card-details-list">
+              <li>
+                <span class="font-bold">Séance longue:</span> Idéale pour un
+                travail d’introspection et de découverte de soi.
+              </li>
+              <li>
+                <span class="font-bold">Séance courte:</span> Parfaite pour
+                répondre à des problématiques actuelles, sortir du brouillard
+                mental ou retrouver un coup de boost.
+              </li>
+              <li>
+                <span class="font-bold">Question simple:</span> Si tu cherches
+                un éclairage ponctuel sur une question spécifique.
+              </li>
+            </ul>
+            <p class="card-details-conclusion">
+              <span class="font-bold">Ma promesse:</span> Tu ressortiras de
+              chaque séance apaisé(e), confiant(e) et prêt(e) à avancer avec
+              sérénité.
+            </p>
+          </div>
         </div>
         <img
           [ngClass]="{ '!h-0': showDetails1 }"
@@ -68,16 +97,17 @@
       </div>
       <div class="presta-cards">
         <div class="card-text">
-          <span class="card-title">Guidance simple</span>
+          <span class="card-title">Séances de soins énergétiques</span>
+          <p class="card-subtitle">Reconnecte-toi à ton Moi profond.</p>
           <p class="card-paragraph">
-            Je te propose de me connecter aux
-            <span class="font-bold">énergies subtiles</span> pour toi afin de
-            répondre à une ou plusieurs de tes question sur un domaine de ton
-            choix.
+            Les soins énergétiques que je propose t’aident à rétablir
+            l’équilibre entre le corps, l’esprit et l’âme. C’est une approche
+            holistique pour soulager les maux physiques et émotionnels, et pour
+            revitaliser ton énergie.
           </p>
           <div class="details-button-container">
             <div (click)="toggleDetails(2)" class="details-button">
-              <span class="details-button-text">Détails</span
+              <span class="details-button-text">Détails de la prestation</span
               ><fa-icon
                 *ngIf="!showDetails2"
                 class="details-button-icon"
@@ -91,25 +121,45 @@
             </div>
           </div>
           <div
-            [ngClass]="{ '!max-h-card-details-height pb-5': showDetails2 }"
+            [ngClass]="{ '!max-h-card-details-height py-5': showDetails2 }"
             class="card-details-paragraph"
           >
-            <p>
-              Cela a pour but de t'aider ponctuellement à cheminer lorsque tu
-              doutes, que te sens perdue face à un choix ou que tu souhaites
-              confirmer un ressentis :
-            </p>
-            <ul class="z-10 list-disc py-5 pl-2 text-lg font-bold">
-              <li>Professionnel</li>
-              <li>Personnel</li>
-              <li>Sentimental</li>
-              <li>Relationnel</li>
-              <li>Vie Antérieure</li>
+            <ul class="card-details-list">
+              <li>
+                <span class="font-bold"
+                  >Effets puissants de libération et de guérison:</span
+                >
+                Ces soins agissent en profondeur pour débloquer et activer ton
+                potentiel énergétique.
+              </li>
+              <li>
+                <span class="font-bold"
+                  >Initiation énergétique (séance longue):</span
+                >
+                Comprends ton fonctionnement énergétique et reçois des
+                canalisations de messages.
+              </li>
+              <li>
+                <span class="font-bold">Soin ciblé (séance courte):</span> Axé
+                sur le nettoyage et l’activation énergétique.
+              </li>
             </ul>
-            <p>
-              Tu recevras ta canalisation par messages vocaux sur WhatsApp (à
-              réécouter autant de fois que tu le souhaites) d’environ 10 min +
-              les photos de ton tirage de carte.
+            <p class="card-details-title">Formats proposés:</p>
+            <ul class="card-details-list">
+              <li>
+                <span class="font-bold">Présentiel à Toulouse:</span> Pour un
+                travail de profondeur et une canalisation médiumnique en plus du
+                soin.
+              </li>
+              <li>
+                <span class="font-bold">À distance:</span> Efficace quel que
+                soit l’endroit où tu te trouves.
+              </li>
+            </ul>
+            <p class="card-details-conclusion">
+              <span class="font-bold">À savoir:</span> Une seule séance peut
+              enclencher un processus de guérison, mais la fréquence dépend de
+              tes besoins et de ta motivation.
             </p>
           </div>
         </div>
@@ -122,72 +172,6 @@
           class="card-image"
         />
       </div>
-      <div class="presta-cards">
-        <div class="card-text">
-          <span class="card-title">Soin énergétique personnalisé</span>
-          <p class="card-paragraph">
-            Je propose des séances de
-            <span class="font-bold">soins énergétiques</span> sur mesure pour
-            t’aider à renouer avec ton
-            <span class="font-bold">Moi intérieur</span>.
-          </p>
-          <div class="details-button-container">
-            <div (click)="toggleDetails(3)" class="details-button">
-              <span class="details-button-text">Détails</span
-              ><fa-icon
-                *ngIf="!showDetails3"
-                class="details-button-icon"
-                icon="plus"
-              ></fa-icon>
-              <fa-icon
-                *ngIf="showDetails3"
-                class="details-button-icon"
-                icon="minus"
-              ></fa-icon>
-            </div>
-          </div>
-          <p
-            [ngClass]="{ '!max-h-card-details-height pb-5': showDetails3 }"
-            class="card-details-paragraph"
-          >
-            Mon approche intègre aussi bien les petits maux physiques que les
-            aspects plus subtils de l'être. Il s’agit d’un soin intense avec des
-            effets de libération puissants.<br /><br />
-            Lors de chaque <span class="font-bold">consultation</span>, je
-            réalise un <span class="font-bold">bilan complet</span> de tes
-            <span class="font-bold">énergies</span> au
-            <span class="font-bold">pendule</span> puis effectue le
-            <span class="font-bold">soin</span> en fonction de tes besoins
-            spécifiques du moment.<br /><br />
-            Le <span class="font-bold">dialogue</span> joue un rôle clé durant
-            la séance, permettant de
-            <span class="font-bold">conscientiser</span> tes maux et de les
-            comprendre davantage. C’est également un moment de
-            <span class="font-bold">détente profonde</span>, où tu ressortira
-            <span class="font-bold">relaxé(e)</span>, avec un
-            <span class="font-bold">bien-être</span> qui perdure sur plusieurs
-            semaines après le soin ! Et oui, ton énergie d’auto-guérison
-            continue le travail que j’ai enclenché sur la durée.<br /><br />
-            Les soins peuvent être réalisés
-            <span class="font-bold">à distance</span> (l’énergie dépasse les
-            limites d’espace et de temps) ou en
-            <span class="font-bold">présentiel</span> (<span class="font-bold"
-              >Toulouse</span
-            >). Le nombre de séances varie selon tes besoins et ta motivation.
-            Une séance suffit néanmoins à enclencher le processus de guérison.
-          </p>
-        </div>
-        <img
-          [ngClass]="{ '!h-0': showDetails3 }"
-          [ngSrc]="presta3"
-          height="1080"
-          width="1080"
-          alt="presta3"
-          class="card-image"
-        />
-      </div>
-    </div>
-    <div class="cards-container">
       <div class="presta-cards">
         <div class="card-text">
           <span class="card-title">Boutique holistique en ligne</span>
@@ -207,7 +191,92 @@
           class="card-image"
         />
       </div>
+      <!--      <div class="presta-cards">-->
+      <!--        <div class="card-text">-->
+      <!--          <span class="card-title">Soin énergétique personnalisé</span>-->
+      <!--          <p class="card-paragraph">-->
+      <!--            Je propose des séances de-->
+      <!--            <span class="font-bold">soins énergétiques</span> sur mesure pour-->
+      <!--            t’aider à renouer avec ton-->
+      <!--            <span class="font-bold">Moi intérieur</span>.-->
+      <!--          </p>-->
+      <!--          <div class="details-button-container">-->
+      <!--            <div (click)="toggleDetails(3)" class="details-button">-->
+      <!--              <span class="details-button-text">Détails de la prestation</span-->
+      <!--              ><fa-icon-->
+      <!--                *ngIf="!showDetails3"-->
+      <!--                class="details-button-icon"-->
+      <!--                icon="plus"-->
+      <!--              ></fa-icon>-->
+      <!--              <fa-icon-->
+      <!--                *ngIf="showDetails3"-->
+      <!--                class="details-button-icon"-->
+      <!--                icon="minus"-->
+      <!--              ></fa-icon>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--          <p-->
+      <!--            [ngClass]="{ '!max-h-card-details-height pb-5': showDetails3 }"-->
+      <!--            class="card-details-paragraph"-->
+      <!--          >-->
+      <!--            Mon approche intègre aussi bien les petits maux physiques que les-->
+      <!--            aspects plus subtils de l'être. Il s’agit d’un soin intense avec des-->
+      <!--            effets de libération puissants.<br /><br />-->
+      <!--            Lors de chaque <span class="font-bold">consultation</span>, je-->
+      <!--            réalise un <span class="font-bold">bilan complet</span> de tes-->
+      <!--            <span class="font-bold">énergies</span> au-->
+      <!--            <span class="font-bold">pendule</span> puis effectue le-->
+      <!--            <span class="font-bold">soin</span> en fonction de tes besoins-->
+      <!--            spécifiques du moment.<br /><br />-->
+      <!--            Le <span class="font-bold">dialogue</span> joue un rôle clé durant-->
+      <!--            la séance, permettant de-->
+      <!--            <span class="font-bold">conscientiser</span> tes maux et de les-->
+      <!--            comprendre davantage. C’est également un moment de-->
+      <!--            <span class="font-bold">détente profonde</span>, où tu ressortira-->
+      <!--            <span class="font-bold">relaxé(e)</span>, avec un-->
+      <!--            <span class="font-bold">bien-être</span> qui perdure sur plusieurs-->
+      <!--            semaines après le soin ! Et oui, ton énergie d’auto-guérison-->
+      <!--            continue le travail que j’ai enclenché sur la durée.<br /><br />-->
+      <!--            Les soins peuvent être réalisés-->
+      <!--            <span class="font-bold">à distance</span> (l’énergie dépasse les-->
+      <!--            limites d’espace et de temps) ou en-->
+      <!--            <span class="font-bold">présentiel</span> (<span class="font-bold"-->
+      <!--              >Toulouse</span-->
+      <!--            >). Le nombre de séances varie selon tes besoins et ta motivation.-->
+      <!--            Une séance suffit néanmoins à enclencher le processus de guérison.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--        <img-->
+      <!--          [ngClass]="{ '!h-0': showDetails3 }"-->
+      <!--          [ngSrc]="presta3"-->
+      <!--          height="1080"-->
+      <!--          width="1080"-->
+      <!--          alt="presta3"-->
+      <!--          class="card-image"-->
+      <!--        />-->
+      <!--      </div>-->
     </div>
+    <!--    <div class="cards-container">-->
+    <!--      <div class="presta-cards">-->
+    <!--        <div class="card-text">-->
+    <!--          <span class="card-title">Boutique holistique en ligne</span>-->
+    <!--          <p class="card-paragraph pb-5">-->
+    <!--            Je t’invite à découvrir ma-->
+    <!--            <span class="font-bold">boutique en ligne</span>, où tu trouveras-->
+    <!--            une variété de <span class="font-bold">ressources</span> pour-->
+    <!--            t’accompagner vers ton bien-être et mieux comprendre le monde-->
+    <!--            énergétique qui t’entoure et te compose.-->
+    <!--          </p>-->
+    <!--        </div>-->
+    <!--        <img-->
+    <!--          [ngSrc]="presta4"-->
+    <!--          height="1080"-->
+    <!--          width="1080"-->
+    <!--          alt="presta4"-->
+    <!--          class="card-image"-->
+    <!--        />-->
+    <!--      </div>-->
+    <!--    </div>-->
     <button
       (click)="goTo('https://linktr.ee/coeur.sauvage')"
       class="pulse z-20 mt-7 rounded-xl bg-primary-orange p-5 font-Merriweather text-2xl font-bold hover:opacity-90"
@@ -231,7 +300,7 @@
   <p class="z-10 px-10 text-center font-Inter text-xl lg:px-80">
     Si tu veux
     <span class="font-bold">réveiller ton Coeur Sauvage au quotidien</span>, je
-    propose également d’autres médias : des sessions de soins collectifs, des
+    propose également d’autres médias : des sessions d'ateliers collectifs, des
     guidances, des partages d’expériences et live sur Instagram…<br /><br />
     Viens voir et abonne toi pour cheminer avec nous vers
     <span class="font-bold">ta liberté !</span>
