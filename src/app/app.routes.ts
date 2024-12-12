@@ -23,6 +23,16 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./contact/contact.component').then((m) => m.ContactComponent),
   },
+  {
+    path: 'faq',
+    loadComponent: () =>
+      import('./faq/faq.component').then((m) => m.FAQComponent),
+  },
+  {
+    path: 'cgv',
+    loadComponent: () =>
+      import('./cgv/cgv.component').then((m) => m.CgvComponent),
+  },
   // {
   //   path: '404',
   //   loadChildren: () =>

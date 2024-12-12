@@ -17,6 +17,8 @@ import {
   faMinus,
   faAngleRight,
   faAngleLeft,
+  faPhone,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -40,6 +42,8 @@ export class SharedModule {
       faMinus,
       faAngleRight,
       faAngleLeft,
+      faPhone,
+      faEnvelope,
     );
   }
 }

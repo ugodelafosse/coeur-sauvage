@@ -2,6 +2,7 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import {
   PreloadAllModules,
   provideRouter,
+  withInMemoryScrolling,
   withPreloading,
 } from '@angular/router';
 
@@ -14,7 +15,13 @@ import { IMAGE_LOADER } from '@angular/common';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withPreloading(PreloadAllModules)),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top',
+      }),
+      withPreloading(PreloadAllModules),
+    ),
     provideClientHydration(),
     {
       provide: IMAGE_LOADER,

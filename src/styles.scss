@@ -9,6 +9,10 @@
 
 @import "swiper/swiper-bundle.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Custom Scrollbar
 /* width */
 ::-webkit-scrollbar {

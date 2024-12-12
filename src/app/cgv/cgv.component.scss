@@ -1,0 +1,14 @@
+.main-title {
+  @apply pb-10 text-center text-2xl font-bold;
+}
+
+.section-title {
+  @apply text-lg font-bold;
+}
+
+.section-list {
+  @apply list-inside list-disc;
+  li {
+    @apply pb-4;
+  }
+}

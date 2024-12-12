@@ -15,7 +15,7 @@ export class PrestationsComponent implements OnInit {
   logoWithoutTitle = 'logo-without-title';
   presta1 = 'presta1';
   presta2 = 'presta2';
-  presta3 = 'presta3';
+  // presta3 = 'presta3';
   presta4 = 'presta4';
   prestationBg = 'prestation-bg';
   reviewsBg = 'reviews-bg';
