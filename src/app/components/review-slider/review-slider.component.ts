@@ -10,12 +10,11 @@ import { SharedModule } from '../../shared/shared.module';
 import Swiper from 'swiper';
 
 @Component({
-  selector: 'app-review-slider',
-  standalone: true,
-  imports: [SharedModule],
-  templateUrl: './review-slider.component.html',
-  styleUrl: './review-slider.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    selector: 'app-review-slider',
+    imports: [SharedModule],
+    templateUrl: './review-slider.component.html',
+    styleUrl: './review-slider.component.scss',
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ReviewSliderComponent implements AfterViewInit {
   // Images path strings

@@ -3,11 +3,10 @@ import { SharedModule } from '../shared/shared.module';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [SharedModule],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+    selector: 'app-contact',
+    imports: [SharedModule],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.scss'
 })
 export class ContactComponent implements OnInit {
   // Images path strings

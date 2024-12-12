@@ -4,11 +4,10 @@ import { ReviewSliderComponent } from '../components/review-slider/review-slider
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-prestations',
-  standalone: true,
-  imports: [SharedModule, ReviewSliderComponent],
-  templateUrl: './prestations.component.html',
-  styleUrl: './prestations.component.scss',
+    selector: 'app-prestations',
+    imports: [SharedModule, ReviewSliderComponent],
+    templateUrl: './prestations.component.html',
+    styleUrl: './prestations.component.scss'
 })
 export class PrestationsComponent implements OnInit {
   // Images path strings

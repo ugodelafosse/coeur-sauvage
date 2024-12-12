@@ -3,11 +3,10 @@ import { SharedModule } from '../../shared/shared.module';
 import { Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [SharedModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+    selector: 'app-header',
+    imports: [SharedModule],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   // Images path strings

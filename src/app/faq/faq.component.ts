@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-faq',
-  standalone: true,
-  imports: [],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.scss',
+    selector: 'app-faq',
+    imports: [],
+    templateUrl: './faq.component.html',
+    styleUrl: './faq.component.scss'
 })
 export class FAQComponent implements OnInit {
   constructor(

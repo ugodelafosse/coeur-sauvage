@@ -3,11 +3,10 @@ import { SharedModule } from '../shared/shared.module';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [SharedModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+    selector: 'app-home',
+    imports: [SharedModule],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   // Images path strings
